@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Wallysson Nunes",
+      "authorEmail": "wally.nm@gmail.com",
+      "authorUrl": "https://medium.com/@wallynm"
+    }
+  }
+}

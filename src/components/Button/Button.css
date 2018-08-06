@@ -1,0 +1,93 @@
+.ButtonText {
+  display: inline-block;
+}
+
+.Button {
+  color: $white;
+  border: 1px solid $primary;
+  background: $primary;
+  border-radius: $btnRadius;
+  padding: 0 10px;
+  min-height: 35px;
+  outline:0;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: lighter;
+
+
+
+  &.ButtonSmall {
+    height: 20px;
+    font-size: 12px;
+  }
+
+  &[class*="Button icon"].ButtonClamp .text{
+    width: calc(100% - 25px);
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+
+  &:focus {
+    box-shadow: 0px 0px 0px 2px transparentize($primary, 0.6);
+    outline:0;
+  }
+
+  &.ButtonBlock {
+    width: 100%;
+  }
+
+  &.ButtonIconRight .text{
+    margin-right: 10px;
+  }
+
+  &.ButtonIconLeft .text{
+    margin-left: 10px;
+  }
+
+  &.ButtonSmall {
+    padding: 15px;
+  }
+
+  &.ButtonMedium {
+    padding: 15px;
+  }
+
+  &.ButtonLarge {
+    padding: 20px;
+  }
+
+  &.ButtonSecondary {
+    background: $secondary;
+    border-color: $secondary;
+  }
+
+  &.ButtonDanger {
+    color: $white;
+    background: $danger;
+    border-color: $danger;
+  }
+
+  &.ButtonInverse {
+    background: $inverse;
+    border-color: $inverse;
+  }
+  &.ButtonTransparent {
+    color: $primary;
+    background: transparent;
+    border-color: transparent;
+  }
+
+  &.ButtonOutline{
+    background: transparent;    
+    color: $primary;
+
+    &.ButtonSecondary{
+      color: $secondary;
+    }
+    &.ButtonInverse{
+      color: $inverse;
+    }
+  }
+}

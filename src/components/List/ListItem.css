@@ -1,0 +1,24 @@
+.ListItem {
+  padding: 15px 10px;
+
+  &:hover {
+    color: $primary;
+    background: shade($sidebarBg, 10);
+  }
+
+  .icon-right{
+    font-size: 10px;
+  }
+}
+
+.ListItemText {
+  width: calc(100% - 25px);
+  margin-left: 10px;
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  + i {
+    float: right;
+  }
+}
