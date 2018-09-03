@@ -16,9 +16,7 @@ class App extends Component {
     return (
       <Provider {...Stores}>
         <Router history={History}>
-          <BrowserRouter>    
-            <Routing/>
-          </BrowserRouter>
+          <Routing/>
         </Router>
       </Provider>
     )
